@@ -1,0 +1,7 @@
+CREATE USER 'eclipse'@'%' IDENTIFIED BY 'eclipse';
+
+CREATE DATABASE IF NOT EXISTS `eclipsedb` DEFAULT CHARACTER SET `utf8` COLLATE `utf8_unicode_ci`;
+
+GRANT ALL PRIVILEGES ON eclipse.* TO 'eclipse'@'%';
+
+FLUSH PRIVILEGES;
